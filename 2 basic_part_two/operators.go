@@ -4,6 +4,11 @@ import "fmt"
 
 func main() {
 
+	// THE THREE TYPES OF OPERATORS IN GOLANG ARE :- 
+	// A) AND OPERATOR(&&)
+	// B) OR OPERATOR(||)
+	// C) NOT OPERATOR(!)
+
 	var firstname string
 	var lastname string
 
@@ -35,8 +40,6 @@ func main() {
 	} else {
 		fmt.Printf("Your current age is %v. You are NOT ELIGIBLE for the quiz.", age)
 		return
-		// here, wwe wrote 'return' inside else block. The work of 'return' is to completely break the program and come out of it.
-		// It means if we write something after this 'return', both inside and outside of 'else' block, then, it won't execute.
 	}
 
 	fmt.Println()
@@ -58,10 +61,7 @@ func main() {
 
 	fmt.Scan(&ansone)
 
-	if ansone == "b" {
-		fmt.Println("Your answer is Correct...")
-		score++
-	} else if ansone == "B" {
+	if ansone == "b" || ansone == "B"{
 		fmt.Println("Your answer is Correct...")
 		score++
 	} else {
@@ -78,10 +78,7 @@ func main() {
 
 	fmt.Scan(&anstwo)
 
-	if anstwo == "d" {
-		fmt.Println("Your answer is Correct...")
-		score++
-	} else if anstwo == "D" {
+	if anstwo == "d" || anstwo == "D"{
 		fmt.Println("Your answer is Correct...")
 		score++
 	} else {
@@ -98,10 +95,7 @@ func main() {
 
 	fmt.Scan(&ansthree)
 
-	if ansthree == "b" {
-		fmt.Println("Your answer is Correct...")
-		score++
-	} else if ansthree == "B" {
+	if ansthree == "b" || ansthree == "B" {
 		fmt.Println("Your answer is Correct...")
 		score++
 	} else {
@@ -118,7 +112,7 @@ func main() {
 
 	fmt.Scan(&ansfour)
 
-	if ansfour == "a" {
+	if ansfour == "a" || ansfour == "A" {
 		fmt.Println("Your answer is Correct...")
 		score++
 	} else if ansfour == "A" {
@@ -138,10 +132,7 @@ func main() {
 
 	fmt.Scan(&ansfive)
 
-	if ansfive == "c" {
-		fmt.Println("Your answer is Correct...")
-		score++
-	} else if ansfive == "C" {
+	if ansfive == "c" || ansfive == "C" {
 		fmt.Println("Your answer is Correct...")
 		score++
 	} else {
@@ -155,7 +146,7 @@ func main() {
 
 	fmt.Println()
 
-	percent := (float64(score) / 5.0) * 100 // here, '5' is no.of questions.
+	percent := (float64(score) / 5.0) * 100 
 	fmt.Printf("Your Percentage :- %v%%", percent)
 	
 }
