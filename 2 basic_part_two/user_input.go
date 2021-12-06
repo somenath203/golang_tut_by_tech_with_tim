@@ -19,6 +19,8 @@ func main() {
 	fmt.Println() // this will act like "\n".
 
 	fmt.Println("Your Name:- ", name)
-	fmt.Println("Your Age:- ", age)
+	fmt.Printf("Your Age:- %v ", age)
+
+	//Scan() can only accept onw word and its execution stops when it receives '\n' after the entered string.
 
 }
